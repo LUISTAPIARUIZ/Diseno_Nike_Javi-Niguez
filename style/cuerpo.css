@@ -1,0 +1,73 @@
+/* estilos del cuerpo*/
+.seccion{
+    position:absolute;
+    z-index: 40;
+    top: 0rem;
+    color: white;
+    width: 100%;
+}
+.seccion__Catalogo{
+    position:absolute;
+    top:0;
+    z-index:30;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 90vh;
+}
+.seccion__letra-fondo{
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    z-index: 25;
+    align-items: center;
+}
+.seccion__letra-fondo h2{
+    color: rgba(0, 0, 0, 0.185);
+    font-weight: 300;
+    font-size: calc(1em + 25vw);
+    margin: 4.2rem 0 0 0 ;
+    font-stretch:extra-condensed;
+}
+.seccion__Catalogo_info-zapatilla,.seccion__Catalogo_img-zapatillas{
+    display: inline-block;
+}
+.seccion__Catalogo_info-zapatilla{
+    width: 18%;
+    position: relative;
+    top: -4rem;
+    left: 0rem;
+}
+.seccion__Catalogo_img-zapatillas{
+    transform: rotate(-40deg);
+}
+.seccion__Catalogo_img-zapatillas img{
+    position: relative;
+    top: -5rem;
+    width: 50rem;
+    min-width: 10rem;
+}
+.seccion__Catalogo_info-zapatilla_estrellas{
+    height: 1rem;
+    margin-bottom:0.8rem ;
+}
+.seccion__Catalogo_info-zapatilla_nombre{
+    font-size:xx-large;
+    padding: 0 0 0.5rem 0;
+}
+.seccion__Catalogo_info-zapatilla_precio{
+    font-size: x-large;
+    font-weight: 100;
+}
+.seccion__Catalogo_info-zapatilla_texto{
+    margin-bottom: 2rem;
+}
+.seccion__Catalogo_info-zapatilla_button-agregar{
+    background-color: var(--colors);
+    border: none;
+    padding: 0.5rem 3rem;
+    border-radius: 50px;
+    box-shadow: 0 1px 5px 0 black;
+    color: white;
+    cursor: pointer;
+}

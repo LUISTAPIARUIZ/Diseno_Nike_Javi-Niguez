@@ -1,0 +1,42 @@
+/* estilos footer*/
+footer{
+    width: 100%;
+    display: flex;
+    position: absolute;
+    z-index: 90;
+    color: white;
+    bottom: 0;
+    justify-content: space-between;
+}
+.footer__izq_copyright{
+    display: inline-block;
+    margin-left: 2rem;
+}
+.footer__izq,.footer__der{
+    display:inline-block;
+}
+.footer__izq_lista-contacto{
+    list-style: none;
+    display: inline-block;
+}
+.footer__izq_lista-contacto li{
+    display: inline-block;
+    margin-left: 1rem;
+}
+.footer__izq_lista-contacto_icon{
+    width: 1rem;
+}
+.footer__der{
+    display: inline-block;
+}
+.footer_der_lista-otros{
+    list-style: none;
+}
+.footer_der_lista-otros li{
+    display: inline;
+    margin-right: 2rem;
+}
+.footer_der_lista-otros li a {
+    text-decoration: none;
+    color: white;
+}
