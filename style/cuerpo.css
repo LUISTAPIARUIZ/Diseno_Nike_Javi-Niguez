@@ -49,7 +49,6 @@
 .seccion__Catalogo_img-zapatillas img{
     width: 40rem;
     min-width: 10rem;
-    object-fit: cover;
 }
 .seccion__Catalogo_info-zapatilla_estrellas{
     height: 1rem;
@@ -75,3 +74,33 @@
     color: white;
     cursor: pointer;
 }
+@media (max-width: 1000px) {
+    .seccion__Catalogo_img-zapatillas{
+        display: flex;
+        position: relative;
+        top: 2rem;
+        justify-content: center;
+        transform: rotate(0);
+    }
+    .seccion__Catalogo_img-zapatillas img{
+        width: 18rem;
+        min-width: 12rem;
+    }
+    .seccion__Catalogo{
+        top: 5rem;
+        display: block;
+        width: 100%;
+
+    }
+    .seccion__Catalogo_info-zapatilla{
+        position: relative;
+        top: 1rem;
+        left: calc(100vw/5);
+        width: 60%;
+    }
+    .seccion__Catalogo_info-zapatilla_button-agregar{
+        display: block;
+        margin: auto;
+    }
+
+ }

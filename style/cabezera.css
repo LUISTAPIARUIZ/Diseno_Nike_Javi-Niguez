@@ -147,8 +147,8 @@
     .cabezera__navegador-1{
         margin: 0;
     }
-    .cabezera__navegador-2_carrito{
-        
+    .cabezera{
+        background-color: var(--colors);
     }
 
 }

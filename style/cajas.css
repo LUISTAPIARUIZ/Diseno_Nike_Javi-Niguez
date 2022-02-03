@@ -23,3 +23,8 @@
     background-color:var(--colors) ;
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 33.3% 100%);
 }
+@media (max-width: 1000px) {
+    .caja-lateral-gris,.caja-lateral-rosa{
+        display: none;
+    }
+}
