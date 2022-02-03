@@ -1,6 +1,6 @@
 /* estilos de la cabezera*/
 .cabezera{
-    width: 100%;
+    width: calc(100vw);
     height: 5rem;
     display: flex;
     justify-content: space-between;
@@ -11,17 +11,29 @@
 .cabezera__navegador-1 {
     width: 70%;
     display: flex;
-    justify-content: left;
     align-items: center;
     margin-left: 2rem;
 }
 .cabezera__navegador-1_logo-nike{
     display: inline-block;
 }
-.cabezera__navegador-1_logo-nike a img {
-    width: 64px;
+
+.cabezera__navegador-1_logo-nike a img{
+    width: 50px;
     min-width: 50px;
 }
+
+/* estilos para menu desplegable*/
+
+.cabezera__navegador-1_menu-barras{
+    display: none;
+}
+.cabezera__navegador-1_menu-barras a img{
+    width: 30px;
+}
+/* ===============================*/
+
+
 /* estilos  menu cabezera*/
 .cabezera__navegador-1_menu{
     display: inline-block;
@@ -79,3 +91,65 @@
 .cabezera__navegador-2_carrito{
     margin-left: 1.5rem;
 }
+@media (max-width: 1000px) { 
+    .cabezera__navegador-1_menu-barras{
+        position: relative;
+        z-index: 70;
+        left: 0.5rem;
+    }
+
+    .cabezera__navegador-1_menu{
+        background-color: rgba(0, 0, 0, 0.89);
+        position: absolute;
+        top: -9999px;
+        left: 0;
+        margin: 0;
+        padding-top: 5rem;
+        display: block;
+        height: 100vh;
+        width: 40%;
+        transition: 1s;
+
+    }
+    .cabezera__navegador-1_menu ul{
+        display: block;
+        width: 100%; 
+    }
+    .cabezera__navegador-1_menu ul li {
+        display: flex;
+        padding: 2rem 0;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .cabezera__navegador-1_menu ul li a {
+        display: inline;
+    }
+    .cabezera__navegador-1_menu ul li:hover{
+        background-color: var(--colors)
+    }
+    .cabezera__navegador-1_menu-barras{
+        display: inline-block;
+    }
+    .cabezera__navegador-2_buscador{
+        display: none;
+    }
+    .cabezera__navegador-1_logo-nike a img{
+        display: flex;
+        position: absolute;
+        left: calc(100vw/2 - calc(15px));
+        top:calc( calc(50px) - calc(5rem/2));
+    }
+    .menu-activado{
+        position: absolute;
+        top: 0;
+    }
+    .cabezera__navegador-1{
+        margin: 0;
+    }
+    .cabezera__navegador-2_carrito{
+        
+    }
+
+}
+
